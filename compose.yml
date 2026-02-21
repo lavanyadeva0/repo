@@ -1,0 +1,15 @@
+---
+version : "3"
+services:
+  dineout:
+    container_name : dinecont
+    build : ./dineout
+    ports:
+      - "8081:80"
+
+  instamart:
+    container_name: instacont
+    build: ./instamart
+    ports:
+      - "8082:80"
+
